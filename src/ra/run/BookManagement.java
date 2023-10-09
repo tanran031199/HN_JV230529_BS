@@ -84,7 +84,7 @@ public class BookManagement {
         List<Integer> indexs = new ArrayList<>();
 
         for (int i = 0; i < books.size(); i++) {
-            if(books.get(i).getBookName().trim().toLowerCase().equals(name)) {
+            if(books.get(i).getBookName().trim().toLowerCase().contains(name)) {
                 indexs.add(i);
             }
         }
